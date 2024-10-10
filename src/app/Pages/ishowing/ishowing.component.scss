@@ -1,0 +1,162 @@
+.movie-card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .movie-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .movie-card img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .movie-card .badge {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+  
+  .movie-card .card-body {
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .movie-card .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .movie-card .card-text {
+    color: #6c757d;
+    font-size: 0.9rem;
+  }
+  
+  .movie-card .btn {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .movie-card .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Đảm bảo rằng các badge không chồng lên nhau quá nhiều */
+  .movie-card .badge.bg-danger {
+    z-index: 1;
+  }
+  
+  .movie-card .badge.bg-warning {
+    z-index: 2;
+  }
+  .movie-card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 250px;
+    object-fit: cover;
+    width: 100%; /* Đảm bảo ảnh chiếm hết chiều rộng container */
+    max-width: 250px; /* Đặt kích thước tối đa cho ảnh nếu muốn */
+  }
+  .movie-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .movie-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .movie-card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  /* Badge ở góc của ảnh */
+  .movie-card .badge.bg-danger {
+    position: absolute;
+    top: 10px; /* Góc trên cùng bên trái */
+    left: 10px;
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+  
+  .movie-card .badge.bg-warning {
+    position: absolute;
+    top: 10px; /* Góc trên cùng bên phải */
+    right: 10px;
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+  
+  .movie-card .card-body {
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .movie-card .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .movie-card .card-text {
+    color: #6c757d;
+    font-size: 0.9rem;
+  }
+  
+  .movie-card .btn {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .movie-card .btn:hover {
+    background-color: #0056b3;
+  }
+  .btn-custom {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b); /* Gradient từ hồng sang đỏ */
+    border: none;
+    border-radius: 30px; /* Bo tròn nút */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    text-align: center;
+    text-decoration: none; /* Loại bỏ gạch dưới */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển đổi mượt mà */
+  }
+  
+  .btn-custom:hover {
+    background: linear-gradient(45deg, #ff4b2b, #ff416c); /* Đổi hướng gradient khi hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Tăng độ bóng khi hover */
+    transform: translateY(-2px); /* Tạo hiệu ứng nổi lên khi hover */
+  }
+  
+  .btn-custom:active {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b); /* Màu sắc khi nhấn giữ */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Giảm độ bóng khi nhấn */
+    transform: translateY(0); /* Trở lại vị trí ban đầu khi nhấn */
+  }

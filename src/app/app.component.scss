@@ -1,0 +1,59 @@
+/* Thanh công cụ màu đen */
+.mat-toolbar {
+    background-color: #000000; /* Màu đen */
+    color: white;
+    padding: 0 20px;
+  }
+  
+  /* Spacer để căn giữa nội dung */
+  .example-spacer {
+    flex: 1;
+  }
+  
+  /* Chữ "Beta" */
+  .beta-text {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Nút trong thanh công cụ */
+  .mat-toolbar button {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border-radius: 8px;
+  }
+  
+  /* Nút "Phim sắp chiếu", "Phim đang chiếu", "Tìm phim" */
+  .center-buttons button {
+    background-color: #000000; /* Màu nền đen */
+    border: none;
+    color: white; /* Chữ trắng */
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 5px;
+  }
+  
+  .center-buttons button:hover {
+    background-color: #333333; /* Khi hover, nền đen đậm hơn */
+  }
+  
+  .center-buttons button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /* Hiệu ứng đổ bóng trắng khi focus */
+  }
+  
+  /* Nút icon yêu thích và chia sẻ */
+  .example-icon {
+    color: white; /* Icon màu trắng */
+  }
+  
+  .favorite-icon:hover,
+  .example-icon:hover {
+    color: #888888; /* Màu xám khi hover lên icon */
+  }
+  .mat-toolbar button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Thay đổi màu nền khi hover */
+}
